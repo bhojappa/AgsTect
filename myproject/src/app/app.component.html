@@ -1,0 +1,11 @@
+<!--The content below is only placeholder and can be replaced.-->
+<div *ngIf="LoginForm">
+  Enter UserName
+  <input type="text"[(ngModel)]="UserName">
+  <br>
+  Enter Password
+  <input type="text"[(ngModel)]="Password">
+  <br>
+  <button (click)="ValidateUser()">Login</button>
+</div>
+<router-outlet></router-outlet>
